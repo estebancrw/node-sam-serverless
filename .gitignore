@@ -1,0 +1,5 @@
+# Packaged CloudFormation template
+packaged-template.yaml
+
+# Node packages
+node_modules/
