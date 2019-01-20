@@ -20,7 +20,7 @@
     "url": "git+https://github.com/estebancrw/node-sam-serverless.git"
   },
   "scripts": {
-    "start": "node src/index.js"
+    "sam": "sam local start-api"
   },
   "version": "0.0.0"
 }

@@ -20,7 +20,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       CodeUri: .
-      Handler: src/index.handler
+      Handler: src/lambda.handler
       Policies:
         - AWSLambdaBasicExecutionRole
       Events:
