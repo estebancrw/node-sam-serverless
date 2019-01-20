@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+
+Description: NodeJS sample API using SAM
+
+Parameters:
+  # Extended timeout for local development
+  Timeout:
+    Type: Number
+    Default: 15
+
+Globals:
+  Function:
+    MemorySize: 128
+    Runtime: nodejs8.10
+    Timeout: !Ref Timeout
+
+Resources:
+  RootFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/index.handler
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /
+            Method: get

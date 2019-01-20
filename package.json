@@ -1,0 +1,26 @@
+{
+  "author": "esteban.crw@gmail.com",
+  "bugs": {
+    "url": "https://github.com/estebancrw/node-sam-serverless/issues"
+  },
+  "dependencies": {
+    "aws-serverless-express": "^3.3.5",
+    "express": "^4.16.4"
+  },
+  "description": "NodeJS sample API using SAM",
+  "engines": {
+    "node": ">=8.10.0"
+  },
+  "homepage": "https://github.com/estebancrw/node-sam-serverless#readme",
+  "license": "UNLICENSED",
+  "main": "src/index.js",
+  "name": "node-sam-serverless",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/estebancrw/node-sam-serverless.git"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "version": "0.0.0"
+}
