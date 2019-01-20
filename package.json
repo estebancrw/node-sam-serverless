@@ -8,6 +8,9 @@
     "express": "^4.16.4"
   },
   "description": "NodeJS sample API using SAM",
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  },
   "engines": {
     "node": ">=8.10.0"
   },
@@ -20,6 +23,7 @@
     "url": "git+https://github.com/estebancrw/node-sam-serverless.git"
   },
   "scripts": {
+    "start": "nodemon src/index.js",
     "sam": "sam local start-api"
   },
   "version": "0.0.0"
